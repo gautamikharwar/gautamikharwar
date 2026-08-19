@@ -1,2 +1,2 @@
-// Update this once the site is deployed to its real domain.
-export const SITE_URL = "https://gautamikharwar.com";
+// Update this if a custom domain is connected later.
+export const SITE_URL = "https://gautami-portfolio-rose.vercel.app";
