@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 
-type Variant = "primary" | "secondary" | "ghost";
+type Variant = "primary" | "secondary" | "ghost" | "inverse";
 
 const variants: Record<Variant, string> = {
-  primary: "bg-foreground text-background hover:bg-accent",
+  primary: "bg-foreground text-background hover:opacity-80",
   secondary: "bg-transparent text-foreground border border-border hover:border-foreground",
   ghost: "bg-surface text-foreground hover:bg-border",
+  inverse: "bg-background text-foreground hover:opacity-80",
 };
 
 type Props = {
@@ -28,7 +29,7 @@ export default function Button({
   external,
   download,
 }: Props) {
-  const classes = `inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium transition-colors duration-200 ${variants[variant]} ${className}`;
+  const classes = `inline-flex items-center gap-2 rounded-none px-5 py-2.5 text-sm font-medium transition-all duration-200 ${variants[variant]} ${className}`;
 
   if (download) {
     return (

@@ -2,11 +2,11 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #14141a;
+  --foreground: #000000;
   --muted: #6b6b76;
   --border: #e6e6ea;
   --surface: #f6f6f8;
-  --accent: #4f46e5;
+  --accent: #000000;
   --accent-foreground: #ffffff;
 }
 
@@ -18,7 +18,7 @@
   --color-surface: var(--surface);
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
-  --font-sans: var(--font-jakarta);
+  --font-sans: var(--font-urbanist);
 }
 
 body {

@@ -7,7 +7,7 @@ export const profile = {
   linkedin: "",
   portfolio: "",
   summary:
-    "UI/UX Designer with 8+ years of experience across B2C e-commerce platforms and AI-driven hospitality technology. Currently the sole Product Design Engineer at an early-stage AI startup, owning end-to-end design from product strategy through to shipped screens, including AI-assisted design-to-code workflows. Skilled at working closely with engineering teams to translate design intent into accurate, high-quality implementation.",
+    "UI/UX Designer with 8+ years of experience across B2C e-commerce platforms and AI-driven hospitality technology. Currently the sole Product Design Engineer at an early-stage AI startup, owning end-to-end design from product strategy through to shipped screens, including AI-assisted design-to-code and vibe coding workflows. Skilled at working closely with engineering teams to translate design intent into accurate, high-quality implementation.",
 };
 
 export type Experience = {
@@ -72,7 +72,11 @@ export const experience: Experience[] = [
 
 export const skills = {
   "Design Tools": ["Figma", "Adobe XD", "Sketch", "Photoshop", "Illustrator"],
-  "AI-Assisted Design": ["Claude Code (prompt-to-UI)", "AI-integrated design workflows"],
+  "AI-Assisted Design & Vibe Coding": [
+    "Claude Code (prompt-to-UI)",
+    "Vibe coding workflows",
+    "AI-integrated design-to-code tools",
+  ],
   "Design Practice": [
     "UX/UI Design",
     "Interaction Design",

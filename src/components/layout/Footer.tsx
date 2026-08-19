@@ -8,7 +8,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="border-t border-border">
+    <footer>
       <Container className="flex flex-col gap-6 py-10 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="text-sm font-medium">{profile.name}</p>
@@ -30,7 +30,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-foreground hover:text-foreground"
+              className="flex h-9 w-9 items-center justify-center rounded-none border border-border text-muted transition-colors hover:border-foreground hover:text-foreground"
             >
               <Link2 size={16} />
             </a>
@@ -38,7 +38,7 @@ export default function Footer() {
           <a
             href={`mailto:${profile.email}`}
             aria-label="Email"
-            className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-muted transition-colors hover:border-foreground hover:text-foreground"
+            className="flex h-9 w-9 items-center justify-center rounded-none border border-border text-muted transition-colors hover:border-foreground hover:text-foreground"
           >
             <Mail size={16} />
           </a>
