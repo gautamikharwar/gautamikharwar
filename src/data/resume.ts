@@ -103,6 +103,13 @@ export const education = [
   },
 ];
 
+export const stats = [
+  { value: "8+", label: "Years of experience" },
+  { value: "35+", label: "Responsive designs delivered" },
+  { value: "5", label: "Companies designed for" },
+  { value: "1", label: "AI startup led solo" },
+];
+
 export const certifications = [
   {
     name: "Foundations of User Experience (UX) Design",
