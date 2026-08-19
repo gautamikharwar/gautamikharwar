@@ -54,14 +54,14 @@ export default function WorkListSection({ project }: { project: Project }) {
       <StaggerGroup className={`mt-6 grid gap-1 ${GRID_CLASS[density]}`}>
         {images.length > 0
           ? images.map((src, i) => (
-              <StaggerItem key={src + i} className="relative aspect-[4/5] w-full overflow-hidden bg-surface">
+              <StaggerItem key={src + i} className="relative aspect-[4/5] w-full overflow-hidden rounded-base bg-surface">
                 <Image src={src} alt={project.title} fill className="object-cover" />
               </StaggerItem>
             ))
           : Array.from({ length: placeholderCount }).map((_, i) => (
               <StaggerItem
                 key={i}
-                className="flex aspect-[4/5] w-full items-center justify-center bg-surface text-xs text-muted"
+                className="flex aspect-[4/5] w-full items-center justify-center rounded-base bg-surface text-xs text-muted"
               >
                 {project.company}
               </StaggerItem>

@@ -13,7 +13,7 @@ export default function WorkGrid() {
             ))}
           </div>
         ) : (
-          <div className="rounded-none border border-dashed border-border p-12 text-center text-sm text-muted">
+          <div className="rounded-base border border-dashed border-border p-12 text-center text-sm text-muted">
             Case studies coming soon.
           </div>
         )}

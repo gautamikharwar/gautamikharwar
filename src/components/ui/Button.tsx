@@ -29,7 +29,7 @@ export default function Button({
   external,
   download,
 }: Props) {
-  const classes = `inline-flex items-center gap-2 rounded-none px-5 py-2.5 text-sm font-medium transition-all duration-200 ${variants[variant]} ${className}`;
+  const classes = `inline-flex items-center gap-2 rounded-pill px-5 py-2.5 text-sm font-medium transition-all duration-200 ${variants[variant]} ${className}`;
 
   if (download) {
     return (

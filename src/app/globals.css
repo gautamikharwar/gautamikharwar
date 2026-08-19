@@ -10,6 +10,10 @@
   --accent-foreground: #ffffff;
 }
 
+/* Corner radius — only two values in this system, never 0:
+   `rounded-pill` (999px) for buttons, badges, tabs, and input fields;
+   `rounded-base` (2px) for everything else. */
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
@@ -19,6 +23,9 @@
   --color-accent: var(--accent);
   --color-accent-foreground: var(--accent-foreground);
   --font-sans: var(--font-urbanist);
+
+  --radius-pill: 999px;
+  --radius-base: 2px;
 }
 
 body {

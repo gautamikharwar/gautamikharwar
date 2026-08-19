@@ -22,7 +22,7 @@ export default function BlogGrid() {
               key={category}
               type="button"
               onClick={() => setActive(category)}
-              className={`rounded-none border px-4 py-1.5 text-sm font-medium transition-colors ${
+              className={`rounded-pill border px-4 py-1.5 text-sm font-medium transition-colors ${
                 active === category
                   ? "border-foreground bg-foreground text-background"
                   : "border-border text-muted hover:text-foreground"
@@ -51,7 +51,7 @@ export default function BlogGrid() {
             </AnimatePresence>
           </div>
         ) : (
-          <div className="mt-10 rounded-none border border-dashed border-border p-12 text-center text-sm text-muted">
+          <div className="mt-10 rounded-base border border-dashed border-border p-12 text-center text-sm text-muted">
             No posts in this category yet.
           </div>
         )}

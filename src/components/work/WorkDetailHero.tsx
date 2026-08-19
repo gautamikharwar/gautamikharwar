@@ -28,7 +28,7 @@ export default function WorkDetailHero({ project }: { project: Project }) {
 
           <div className="mt-2 flex flex-wrap gap-2">
             {project.tags.map((tag) => (
-              <span key={tag} className="rounded-none border border-border bg-surface px-3 py-1.5 text-xs">
+              <span key={tag} className="rounded-pill border border-border bg-surface px-3 py-1.5 text-xs">
                 {tag}
               </span>
             ))}

@@ -12,7 +12,7 @@ export default function WorkCarouselCard({ project }: { project: Project }) {
   const loopImages = [...images, ...images];
 
   return (
-    <div className="flex flex-col overflow-hidden rounded-none border border-border bg-background">
+    <div className="flex flex-col overflow-hidden rounded-base border border-border bg-background">
       <div className="relative h-96 w-full overflow-hidden bg-surface">
         <motion.div
           className="flex h-full w-max"

@@ -12,8 +12,8 @@ export default function Hero() {
     <section>
       <Container className="grid gap-12 py-20 md:grid-cols-[1.1fr_0.9fr] md:py-28">
         <Reveal className="flex flex-col gap-6">
-          <span className="inline-flex w-fit items-center gap-2 rounded-none border border-border px-4 py-1.5 text-xs text-muted">
-            <span className="h-1.5 w-1.5 rounded-none bg-accent" />
+          <span className="inline-flex w-fit items-center gap-2 rounded-pill border border-border px-4 py-1.5 text-xs text-muted">
+            <span className="h-1.5 w-1.5 rounded-full bg-accent" />
             Product Design Engineer · Open to new opportunities
           </span>
 
@@ -33,7 +33,7 @@ export default function Hero() {
           </div>
         </Reveal>
 
-        <Reveal delay={0.15} className="flex flex-col justify-between gap-6 rounded-none border border-border bg-surface p-6">
+        <Reveal delay={0.15} className="flex flex-col justify-between gap-6 rounded-base border border-border bg-surface p-6">
           <div>
             <p className="text-xs font-medium uppercase tracking-wide text-muted">Currently</p>
             <p className="mt-2 text-sm">
@@ -48,7 +48,7 @@ export default function Hero() {
             <p className="text-xs font-medium uppercase tracking-wide text-muted">Toolkit</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {featuredTools.map((tool) => (
-                <span key={tool} className="rounded-none border border-border bg-background px-3 py-1 text-xs">
+                <span key={tool} className="rounded-pill border border-border bg-background px-3 py-1 text-xs">
                   {tool}
                 </span>
               ))}

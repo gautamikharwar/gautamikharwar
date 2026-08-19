@@ -9,13 +9,13 @@ export default function WorkGallery({ images, alt }: { images: string[]; alt: st
         <StaggerGroup className="grid grid-cols-2 gap-1 md:grid-cols-3">
           {images.map((src, i) =>
             src ? (
-              <StaggerItem key={i} className="relative aspect-[4/5] w-full overflow-hidden bg-surface">
+              <StaggerItem key={i} className="relative aspect-[4/5] w-full overflow-hidden rounded-base bg-surface">
                 <Image src={src} alt={alt} fill className="object-cover" />
               </StaggerItem>
             ) : (
               <StaggerItem
                 key={i}
-                className="flex aspect-[4/5] w-full items-center justify-center bg-surface text-xs text-muted"
+                className="flex aspect-[4/5] w-full items-center justify-center rounded-base bg-surface text-xs text-muted"
               >
                 Image {i + 3}
               </StaggerItem>

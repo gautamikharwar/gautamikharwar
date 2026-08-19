@@ -9,7 +9,7 @@ export default function ClosingCta() {
     <section className="bg-foreground text-background">
       <Container className="flex flex-col items-center py-24 text-center md:py-32">
         <Reveal className="flex flex-col items-center gap-6">
-          <span className="flex h-16 w-16 items-center justify-center rounded-none bg-background text-lg font-semibold text-foreground">
+          <span className="flex h-16 w-16 items-center justify-center rounded-base bg-background text-lg font-semibold text-foreground">
             GK
           </span>
           <h2 className="max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">

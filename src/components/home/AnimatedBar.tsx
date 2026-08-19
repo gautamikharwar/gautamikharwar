@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 export default function AnimatedBar({ progress }: { progress: number }) {
   return (
-    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-none bg-surface">
+    <div className="mt-2 h-1.5 w-full overflow-hidden rounded-base bg-surface">
       <motion.div
-        className="h-full rounded-none bg-foreground"
+        className="h-full rounded-base bg-foreground"
         initial={{ width: 0 }}
         whileInView={{ width: `${progress}%` }}
         viewport={{ once: true, margin: "-80px" }}

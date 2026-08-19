@@ -9,11 +9,11 @@ export default function BlogContent({ post }: { post: BlogPost }) {
       <Container className="py-16 md:py-20">
         <Reveal>
           {post.coverImage ? (
-            <div className="relative mb-10 aspect-[16/9] w-full overflow-hidden rounded-none bg-surface">
+            <div className="relative mb-10 aspect-[16/9] w-full overflow-hidden rounded-base bg-surface">
               <Image src={post.coverImage} alt={post.title} fill className="object-cover" />
             </div>
           ) : (
-            <div className="mb-10 flex aspect-[16/9] w-full items-center justify-center rounded-none border border-dashed border-border bg-surface text-sm text-muted">
+            <div className="mb-10 flex aspect-[16/9] w-full items-center justify-center rounded-base border border-dashed border-border bg-surface text-sm text-muted">
               Cover image coming soon — add under /public/images/blog/{post.slug}/
             </div>
           )}

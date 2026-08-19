@@ -22,7 +22,7 @@ export default function SkillsGrid() {
                 {items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-none border border-border bg-surface px-3 py-1.5 text-xs text-foreground"
+                    className="rounded-pill border border-border bg-surface px-3 py-1.5 text-xs text-foreground"
                   >
                     {item}
                   </span>

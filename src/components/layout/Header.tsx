@@ -16,7 +16,7 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-border bg-background/80 backdrop-blur">
       <Container className="flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="flex h-8 w-8 items-center justify-center rounded-none bg-foreground text-sm font-semibold text-background">
+          <span className="flex h-8 w-8 items-center justify-center rounded-base bg-foreground text-sm font-semibold text-background">
             GK
           </span>
           <span className="text-sm font-medium">Gautami Kharwar</span>
@@ -38,7 +38,7 @@ export default function Header() {
           <a
             href={RESUME_PATH}
             download
-            className="inline-flex items-center gap-2 rounded-none bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-80"
+            className="inline-flex items-center gap-2 rounded-pill bg-foreground px-5 py-2.5 text-sm font-medium text-background transition-opacity hover:opacity-80"
           >
             <Download size={16} />
             Resume
@@ -48,7 +48,7 @@ export default function Header() {
         <button
           type="button"
           aria-label="Toggle menu"
-          className="flex h-9 w-9 items-center justify-center rounded-none border border-border md:hidden"
+          className="flex h-9 w-9 items-center justify-center rounded-pill border border-border md:hidden"
           onClick={() => setOpen((v) => !v)}
         >
           {open ? <X size={18} /> : <Menu size={18} />}
@@ -69,7 +69,7 @@ export default function Header() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="rounded-none px-2 py-2.5 text-sm text-foreground hover:bg-surface"
+                  className="rounded-base px-2 py-2.5 text-sm text-foreground hover:bg-surface"
                   onClick={() => setOpen(false)}
                 >
                   {link.label}
@@ -78,7 +78,7 @@ export default function Header() {
               <a
                 href={RESUME_PATH}
                 download
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-none bg-foreground px-5 py-2.5 text-sm font-medium text-background"
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-pill bg-foreground px-5 py-2.5 text-sm font-medium text-background"
               >
                 <Download size={16} />
                 Resume

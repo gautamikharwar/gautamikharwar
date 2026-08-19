@@ -12,7 +12,7 @@ export default function EducationCerts() {
           <div className="mt-6 flex flex-col gap-6">
             {education.map((item) => (
               <div key={item.degree} className="flex gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-surface">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-base bg-surface">
                   <GraduationCap size={18} />
                 </span>
                 <div>
@@ -30,7 +30,7 @@ export default function EducationCerts() {
           <div className="mt-6 flex flex-col gap-6">
             {certifications.map((item) => (
               <div key={item.name} className="flex gap-4">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-none bg-surface">
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-base bg-surface">
                   <BadgeCheck size={18} />
                 </span>
                 <div>

@@ -10,7 +10,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
   return (
     <Link
       href={`/blog/${post.slug}`}
-      className="group flex flex-col overflow-hidden rounded-none border border-border bg-background transition-colors hover:border-foreground"
+      className="group flex flex-col overflow-hidden rounded-base border border-border bg-background transition-colors hover:border-foreground"
     >
       <div className="relative aspect-[16/10] w-full overflow-hidden bg-surface">
         {post.coverImage ? (
@@ -29,7 +29,7 @@ export default function BlogCard({ post }: { post: BlogPost }) {
 
       <div className="flex flex-1 flex-col gap-3 p-5">
         <div className="flex items-center gap-3 text-xs text-muted">
-          <span className="rounded-none border border-border px-2.5 py-1 font-medium text-foreground">
+          <span className="rounded-pill border border-border px-2.5 py-1 font-medium text-foreground">
             {post.category}
           </span>
           <span>{formatDate(post.date)}</span>

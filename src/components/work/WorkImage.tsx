@@ -8,11 +8,11 @@ export default function WorkImage({ src, alt }: { src: string; alt: string }) {
       <Container className="py-10 md:py-14">
         <Reveal>
           {src ? (
-            <div className="relative aspect-[16/9] w-full overflow-hidden bg-surface">
+            <div className="relative aspect-[16/9] w-full overflow-hidden rounded-base bg-surface">
               <Image src={src} alt={alt} fill className="object-cover" />
             </div>
           ) : (
-            <div className="flex aspect-[16/9] w-full items-center justify-center border border-dashed border-border bg-surface text-sm text-muted">
+            <div className="flex aspect-[16/9] w-full items-center justify-center rounded-base border border-dashed border-border bg-surface text-sm text-muted">
               Image coming soon
             </div>
           )}

@@ -21,7 +21,7 @@ export default function BlogDetailHero({ post }: { post: BlogPost }) {
         </Link>
 
         <Reveal delay={0.05} className="mt-8 flex flex-col gap-4">
-          <span className="rounded-none border border-border px-2.5 py-1 text-xs font-medium w-fit">
+          <span className="rounded-pill border border-border px-2.5 py-1 text-xs font-medium w-fit">
             {post.category}
           </span>
           <h1 className="max-w-3xl text-4xl font-semibold leading-[1.1] tracking-tight md:text-5xl">

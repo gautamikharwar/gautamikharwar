@@ -11,7 +11,7 @@ export default function WorkPrevNext({ prev, next }: { prev: Project; next: Proj
         <Reveal className="grid gap-4 md:grid-cols-2">
           <Link
             href={`/work/${prev.slug}`}
-            className="group flex items-center gap-4 rounded-none border border-border p-6 transition-colors hover:border-foreground md:p-8"
+            className="group flex items-center gap-4 rounded-base border border-border p-6 transition-colors hover:border-foreground md:p-8"
           >
             <ArrowLeft size={20} className="shrink-0 transition-transform group-hover:-translate-x-1" />
             <div>
@@ -22,7 +22,7 @@ export default function WorkPrevNext({ prev, next }: { prev: Project; next: Proj
 
           <Link
             href={`/work/${next.slug}`}
-            className="group flex items-center justify-between gap-4 rounded-none border border-border p-6 text-right transition-colors hover:border-foreground md:p-8"
+            className="group flex items-center justify-between gap-4 rounded-base border border-border p-6 text-right transition-colors hover:border-foreground md:p-8"
           >
             <div>
               <p className="text-xs font-medium uppercase tracking-wide text-muted">Next project</p>

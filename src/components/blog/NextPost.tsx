@@ -11,7 +11,7 @@ export default function NextPost({ post }: { post: BlogPost }) {
         <Reveal>
           <Link
             href={`/blog/${post.slug}`}
-            className="group flex items-center justify-between gap-4 rounded-none border border-border p-6 transition-colors hover:border-foreground md:p-8"
+            className="group flex items-center justify-between gap-4 rounded-base border border-border p-6 transition-colors hover:border-foreground md:p-8"
           >
             <div>
               <p className="text-xs font-medium uppercase tracking-wide text-muted">Next post</p>

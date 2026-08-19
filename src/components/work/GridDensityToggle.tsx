@@ -26,7 +26,7 @@ export default function GridDensityToggle({
           aria-label={label}
           aria-pressed={value === v}
           onClick={() => onChange(v)}
-          className={`flex h-6 w-6 items-center justify-center rounded-none transition-colors ${
+          className={`flex h-6 w-6 items-center justify-center rounded-pill transition-colors ${
             value === v ? "text-foreground" : "text-border hover:text-muted"
           }`}
         >

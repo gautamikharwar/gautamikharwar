@@ -27,7 +27,7 @@ export default function ExperienceTimeline() {
               <ul className="flex flex-col gap-2.5">
                 {role.bullets.map((bullet, i) => (
                   <li key={i} className="flex gap-3 text-sm text-muted">
-                    <span className="mt-2 h-1 w-1 shrink-0 rounded-none bg-muted" />
+                    <span className="mt-2 h-1 w-1 shrink-0 rounded-full bg-muted" />
                     <span>{bullet}</span>
                   </li>
                 ))}
