@@ -1,4 +1,5 @@
 import Container from "@/components/ui/Container";
+import SocialLinks from "@/components/ui/SocialLinks";
 import Reveal from "@/components/motion/Reveal";
 import { profile } from "@/data/resume";
 
@@ -12,6 +13,9 @@ export default function AboutIntro() {
             Hi, I&apos;m Gautami.
           </h1>
           <p className="mt-6 max-w-2xl text-base text-muted md:text-lg">{profile.summary}</p>
+
+          <p className="mt-10 text-xs font-medium uppercase tracking-wide text-muted">Find me on</p>
+          <SocialLinks className="mt-3" />
         </Reveal>
       </Container>
     </section>

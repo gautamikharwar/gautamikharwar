@@ -35,7 +35,7 @@ export default function BlogHighlights() {
           ))}
         </StaggerGroup>
 
-        <Reveal delay={0.1} className="mt-10">
+        <Reveal delay={0.1} className="mt-10 flex justify-end">
           <Button href="/blog" variant="secondary" icon={<ArrowRight size={16} />}>
             Read the blog
           </Button>

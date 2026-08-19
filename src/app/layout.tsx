@@ -3,6 +3,7 @@ import { Urbanist } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { profile } from "@/data/resume";
+import { socialProfileUrls } from "@/data/social";
 import { SITE_URL } from "@/lib/seo";
 import "./globals.css";
 
@@ -65,7 +66,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     url: SITE_URL,
     email: `mailto:${profile.email}`,
     address: { "@type": "PostalAddress", addressLocality: profile.location },
-    ...(profile.linkedin ? { sameAs: [profile.linkedin] } : {}),
+    ...(socialProfileUrls.length > 0 ? { sameAs: socialProfileUrls } : {}),
   };
 
   return (

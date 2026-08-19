@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { Link2, Mail } from "lucide-react";
 import Container from "@/components/ui/Container";
+import SocialLinks from "@/components/ui/SocialLinks";
 import { navLinks } from "@/data/nav";
 import { profile } from "@/data/resume";
 
@@ -23,30 +23,11 @@ export default function Footer() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
-          {profile.linkedin && (
-            <a
-              href={profile.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              className="flex h-9 w-9 items-center justify-center rounded-none border border-border text-muted transition-colors hover:border-foreground hover:text-foreground"
-            >
-              <Link2 size={16} />
-            </a>
-          )}
-          <a
-            href={`mailto:${profile.email}`}
-            aria-label="Email"
-            className="flex h-9 w-9 items-center justify-center rounded-none border border-border text-muted transition-colors hover:border-foreground hover:text-foreground"
-          >
-            <Mail size={16} />
-          </a>
-        </div>
+        <SocialLinks />
       </Container>
 
       <Container className="pb-8">
-        <p className="text-xs text-muted">© {year} {profile.name}. All rights reserved.</p>
+        <p className="text-center text-xs text-muted">© {year} {profile.name}. All rights reserved.</p>
       </Container>
     </footer>
   );

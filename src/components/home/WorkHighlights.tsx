@@ -34,12 +34,12 @@ export default function WorkHighlights() {
             ))}
           </StaggerGroup>
         ) : (
-          <div className="mt-12 rounded-none border border-dashed border-border p-12 text-center text-sm text-muted">
+          <div className="mt-12 rounded-base border border-dashed border-border p-12 text-center text-sm text-muted">
             Case studies coming soon.
           </div>
         )}
 
-        <Reveal delay={0.1} className="mt-10">
+        <Reveal delay={0.1} className="mt-10 flex justify-end">
           <Button href="/work" variant="secondary" icon={<ArrowRight size={16} />}>
             See all work
           </Button>

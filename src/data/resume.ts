@@ -4,8 +4,6 @@ export const profile = {
   location: "Surat, Gujarat, India",
   email: "gautamikharwar2813@gmail.com",
   phone: "+91 74879-67832",
-  linkedin: "",
-  portfolio: "",
   summary:
     "UI/UX Designer with 8+ years of experience across B2C e-commerce platforms and AI-driven hospitality technology. Currently the sole Product Design Engineer at an early-stage AI startup, owning end-to-end design from product strategy through to shipped screens, including AI-assisted design-to-code and vibe coding workflows. Skilled at working closely with engineering teams to translate design intent into accurate, high-quality implementation.",
 };
