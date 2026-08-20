@@ -4,6 +4,7 @@ import WorkDetailHero from "@/components/work/WorkDetailHero";
 import WorkImage from "@/components/work/WorkImage";
 import WorkDescription from "@/components/work/WorkDescription";
 import WorkStory from "@/components/work/WorkStory";
+import WorkCaseStudy from "@/components/work/WorkCaseStudy";
 import WorkGallery from "@/components/work/WorkGallery";
 import WorkPrevNext from "@/components/work/WorkPrevNext";
 import ClosingCta from "@/components/home/ClosingCta";
@@ -61,10 +62,23 @@ export default async function WorkDetailPage({ params }: PageProps<"/work/[slug]
         dangerouslySetInnerHTML={{ __html: JSON.stringify(projectJsonLd) }}
       />
       <WorkDetailHero project={project} />
-      <WorkImage src={image1} alt={project.title} />
-      <WorkDescription description={project.description} />
-      <WorkImage src={image2} alt={project.title} />
-      <WorkStory project={project} />
+      {project.caseStudy ? (
+        <>
+          <WorkImage
+            src={image1}
+            alt={project.title}
+            placeholder={project.caseStudy.heroPlaceholder}
+          />
+          <WorkCaseStudy caseStudy={project.caseStudy} />
+        </>
+      ) : (
+        <>
+          <WorkImage src={image1} alt={project.title} />
+          <WorkDescription description={project.description} />
+          <WorkImage src={image2} alt={project.title} />
+          <WorkStory project={project} />
+        </>
+      )}
       <WorkGallery images={remaining} alt={project.title} />
       {projects.length > 1 && <WorkPrevNext prev={prev} next={next} />}
       <ClosingCta />
